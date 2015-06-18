@@ -75,6 +75,7 @@ Full list of parameters which can be added to a saucelabs-* task:
 * __testname__: The name of this test, displayed on the Sauce Labs dashboard. _Optional_
 * __tags__: An array of strings, to be added as tags to the test on Sauce Labs. _Optional_
 * __tunneled__: Defaults to true; Won't launch a Sauce Connect tunnel if set to false. _Optional_
+* __identifier__: String used to indentify the Sauce Connect tunnel, known as `tunnelIdentifier` in Sauce Labs documentation, required if tunneled is set to false. _Optional_
 * __tunnelArgs__: Array of optional arguments to be passed to the Sauce Connect tunnel. example: `['--debug', '--direct-domains', 'google.com']`. See [here](https://saucelabs.com/docs/connect) for further documentation.
 * __sauceConfig__: Map of extra parameters to be passed to sauce labs. example: `{'video-upload-on-pass': false, 'idle-timeout': 60}`. See [here](https://saucelabs.com/docs/additional-config) for further documentation.
 * __pollInterval__: Number of milliseconds between each retry to see if a test is completed or not (default: 2000). _Optional_
